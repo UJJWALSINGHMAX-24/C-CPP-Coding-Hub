@@ -1,0 +1,72 @@
+{
+    "code-runner.executorMap": {
+        "python": "cd $dir && python $fileName",
+        "javascript": "cd $dir && node $fileName",
+        "typescript": "cd $dir && npx ts-node $fileName",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "csharp": "cd $dir && dotnet run",
+        "php": "cd $dir && php $fileName",
+        "go": "cd $dir && go run $fileName",
+        "ruby": "cd $dir && ruby $fileName",
+        "rust": "cd $dir && rustc $fileName && &\\$fileNameWithoutExt.exe",
+        "assembly": "cd $dir && nasm -f win64 $fileName -o $fileNameWithoutExt.obj && gcc $fileNameWithoutExt.obj -o $fileNameWithoutExt.exe && &\\$fileNameWithoutExt.exe",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe"
+    },
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "explorer.confirmDelete": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "code-runner.clearPreviousOutput": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.inlineSuggest.enabled": false,
+    "terminal.integrated.enableMultilinePasteWarning": "never",
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.userWords": [
+        "Ujjwal",
+        "ujjwaldb"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "vscode_custom_css.imports": [
+        "file:///c:/Users/LENEVO/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.showExecutionMessage": false,
+    "makefile.configureOnOpen": true,
+    "sqltools.connections": [
+        {
+            "name": "MySQLFirst",
+            "driver": "MySQL",
+            "server": "localhost",
+            "port": 3307,
+            "database": "my_first_db",
+            "username": "root",
+            "password": "",
+            "passwordMode": "Empty Password",
+            "previewLimit": 50
+        }
+    ],
+    "editor.formatOnSave": true
+}
