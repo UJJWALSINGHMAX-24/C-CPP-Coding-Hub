@@ -4,30 +4,13 @@ using namespace std;
 int main()
 {
 
-    int Num1, Num2;
-    char Choice;
+    string food = "Pizza";
+    string *Add1 = &food;
+    string **Add2 = &Add1;
 
-    cout << endl
-         << "   CALCULATOR    " << endl
-         << endl;
-
-    cout << "Enter Your First Number : ";
-    cin >> Num1;
-
-    cout << "Enter Your Second Number : ";
-    cin >> Num2;
-
-    cout << "Your Operator + Hai : ";
-    cin >> Choice;
-
-    if (Choice == '+')
-    {
-        Num1 + Num2;
-    }
-
-    int Result = Num1 + Num2;
-
-    cout << "Result Is : " << Num1 << Choice << Num2 << " = " << Result;
+    cout << food << endl;
+    cout << &Add1 << endl;
+    cout << &Add2;
 
     return 0;
 }
